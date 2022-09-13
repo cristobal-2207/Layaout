@@ -1,0 +1,61 @@
+*{
+  font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html{
+  font-size: 62.5%;
+}
+/* Contenedor Principla */
+.contenedor-principal{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr 6fr 1fr;
+  grid-template-areas:
+  "encabezado" 
+  "menu"
+  "filtros"
+  "productos"
+  "redes-sociales";
+}
+/* Tamaño de Iconos */
+
+/* En cabezado */
+header.encabezado{
+  grid-area: encabezado;
+  background-color: #03045eff;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: #ffffff;
+}
+header.encabezado h1{
+  font-size: 3rem;
+}
+/* Menu de Navegación */
+nav.menu{
+  grid-area: menu;
+  padding: 8px;
+  background-color: #48cae4ff;
+  color: #caf0f8ff;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+nav.menu ul li{
+  margin-bottom: 0.8rem;
+  font-weight: bold;
+}
+/* Productos */
+.card-img-top{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* Redes Sociales */
+
+.icon{
+  height: 5rem
+}

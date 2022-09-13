@@ -4,13 +4,61 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Desafio 10 - Layaout</title>
+  <!-- CSS-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./assets/css/mobile.css">
 </head>
 <body>
-  <div>
-    <nav></nav>
-    <main></main>
-    <footer></footer>
+  <div class="contenedor-principal">
+    <header class="encabezado">
+      <img class="icon icon-encabezado" src="./assets/img/bicicleta.png" alt="Icono de Bicicleta">
+      <h1>
+        BICICLETAS
+      </h1>
+    </header>
+    <nav class="menu">
+      <ul>
+        <li>Inicio</li>
+        <li>Sobre nosotros</li>
+        <li>Contacto</li>
+      </ul>
+    </nav>
+    <section class="filtros">
+      <div>
+        <p>Buscar por nombre:</p>
+        <input type="text">
+      </div>
+      <div>
+        <p>Ordenar por:</p>
+        <select name="" id="">
+          <option value="precio">Precio</option>
+          <option value="fecha">Fecha</option>
+        </select>
+      </div>
+      <div>
+        <p>Mostrar solo artículos:</p>
+        Nuevos <input type="checkbox">
+        Usados <input type="checkbox">
+      </div>
+    </section>
+    <main class="productos">
+      <div class="card">
+        <img src="./assets/img/foto-1.jpg" class="card-img-top" alt="Camisas italianas.">
+        <h3 class="card-title">Bicicleta</h3>
+        <p class="card-text">$15.000</p>
+        <button class="card-footer-button">Comprar</button>
+      </div>
+    </main>
+    <footer>
+      <div class="redes-sociales">
+        <img class="icon"  src="./assets/img/facebook.png" alt="Icono de Facebook">
+        <img class="icon"  src="./assets/img/instagram.png" alt="Icono de Instagram">
+      </div>
+      <p>
+        Todos los derechos reservados.
+      </p>
+    </footer>
   </div>
 </body>
 </html>
