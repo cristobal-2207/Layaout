@@ -52,11 +52,7 @@ div.filter{
 .products{
   grid-area: products;
 }
-img{
-  width: 90%;
-  height: 90%;
-  object-fit: fill;
-}
+
 /* Producto */
 .product{
   display: flex;
@@ -64,6 +60,11 @@ img{
 }
 .product p{
   padding: 1rem;
+}
+img{
+  width: 90%;
+  height: 90%;
+  object-fit: fill;
 }
 .displayNone,
 .nav{
@@ -91,5 +92,5 @@ img.logo{
   margin: 1rem;
 }
 .footer p{
-  padding-top: 2rem;
+  padding: 2rem;
 }

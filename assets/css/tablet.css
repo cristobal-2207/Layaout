@@ -2,9 +2,45 @@
 .parent-container{
   display: grid;
   grid-template-areas: 
-  "header   header    nav nav nav"
-  "filter   filter    filter"
-  "products products  products"
-  "pages    pages     pages"
-  "footer   footer    footer";
+    "header   header    nav      nav      nav"
+    "filter   products  products products products"
+    ".        products  products products products"
+    "pages    pages     pages    pages    pages"
+    "footer   footer    footer   footer   footer";
+  grid-template-columns: repeat(4, 1fr);
+}
+.displayNone,
+.nav{
+  display: block;
+}
+.nav{
+  grid-area: nav;
+  display: flex;
+  justify-content: space-evenly;
+}
+.burger{
+  display: none;
+}
+.filter{
+  flex-direction: column;
+  padding-top: 40%;
+}
+.products{
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+div.product.displayNone{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.product{
+  margin: 2% 0;
+}
+img{
+  max-width: 25rem;
+  object-fit: fill
+}
+.pages p{
+  padding: 1%;
 }
