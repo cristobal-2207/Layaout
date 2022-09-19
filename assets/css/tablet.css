@@ -24,6 +24,9 @@
 .burger{
   display: none;
 }
+div.filter{
+  background-color: #caf0f8;
+}
 .filter{
   flex-direction: column;
   padding-top: 40%;
@@ -36,6 +39,7 @@ div.product.displayNone{
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 1rem;
 }
 .product{
   margin: 2% 0;
@@ -43,6 +47,9 @@ div.product.displayNone{
 img{
   max-width: 25rem;
   object-fit: fill
+}
+div.pages{
+  background-color: #caf0f8;
 }
 .pages p{
   padding: 1%;
