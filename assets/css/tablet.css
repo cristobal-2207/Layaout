@@ -1,0 +1,10 @@
+/* CSS Tablet */
+.parent-container{
+  display: grid;
+  grid-template-areas: 
+  "header   header    nav nav nav"
+  "filter   filter    filter"
+  "products products  products"
+  "pages    pages     pages"
+  "footer   footer    footer";
+}

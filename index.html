@@ -7,58 +7,97 @@
   <title>Desafio 10 - Layaout</title>
   <!-- CSS-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="./assets/css/mobile.css">
+  <!--CSS Mobile-->
+  <link rel="stylesheet" href="./assets/css/mobile.css" media="screen and (min-width: 300px)">
+  <!--CSS Tablet-->
+  <link rel="stylesheet" href="./assets/css/tablet.css" media="screen and (min-width: 576px)">
+  <!--CSS Desktop-->
+  <link rel="stylesheet" href="./assets/css/desktop.css" media="screen and (min-width: 992px">
 </head>
 <body>
-  <div class="contenedor-principal">
-    <header class="encabezado">
-      <img class="icon icon-encabezado" src="./assets/img/bicicleta.png" alt="Icono de Bicicleta">
-      <h1>
-        BICICLETAS
-      </h1>
+  <div class="parent-container">
+    <!--Header-->
+    <header class="header">
+      <img class="logo" src="./assets/img/bike_23924.png" alt="Logo de una bicicleta.">
+      <h1>Bicletas</h1>
+      <img class="burger icon" src="./assets/img/menu_FILL0_wght400_GRAD0_opsz48.png" alt="Simbolo de menu hamburguesa.">
     </header>
-    <nav class="menu">
-      <ul>
-        <li>Inicio</li>
-        <li>Sobre nosotros</li>
-        <li>Contacto</li>
-      </ul>
+    <!--/Header-->
+    <!--Nav-->
+    <nav class="nav">
+      <p>Inicio</p>
+      <p>Catálago</p>
+      <p>Ofertas</p>
+      <p>Contacto</p>
     </nav>
-    <section class="filtros">
+    <!--/Nav-->
+    <!--Buscador-->
+    <div class="filter">
+      <p>Ordenar Por:</p>
+      <div class="options">
+        <p>Precio</p>
+        <img class="icon" src="./assets/img/keyboard_double_arrow_down_FILL0_wght400_GRAD0_opsz48.png" alt="Icon de doble abajo.">
+      </div>
+    </div>
+    <!--/Buscador-->
+    <!--Productos-->
+    <div class="products">
+      <!--Producto 1-->
+      <div class="product">
+        <img src="./assets/img/foto-1.jpg" alt="">
+        <p>Bicicleta Retro</p>
+        <button class="fovorite styled" type="button">
+          Ver más
+        </button>
+      </div>
+      <!--/Producto 1-->
+      <!--Producto 2-->
+      <div class="product displayNone">
+        <img src="./assets/img/foto-2.jpg" alt="">
+        <p>titulo</p>
+        <button class="fovorite styled" type="button">
+          Ver más
+        </button>
+      </div>
+      <!--/Producto 2-->
+      <!--Producto 3-->
+      <div class="product displayNone">
+        <img src="./assets/img/foto-3.jpg" alt="">
+        <p>titulo</p>
+        <button class="fovorite styled" type="button">
+          Ver más
+        </button>
+      </div>
+      <!--/Producto 3-->
+      <!--Producto 4-->
+      <div class="product displayNone">
+        <img src="./assets/img/foto-4.jpg" alt="">
+        <p>titulo</p>
+        <button class="fovorite styled" type="button">
+          Ver más
+        </button>
+      </div>
+      <!--/Producto 4-->
+    </div>
+    <!--/Productos-->
+    <!--Páginas-->
+    <div class="pages">
+      <img class="icon" src="./assets/img/keyboard_double_arrow_left_FILL0_wght400_GRAD0_opsz48.png" alt="Icon de doble izquierda.">
+      <p>1</p>
+      <p>2</p>
+      <p>3</p>
+      <img class="icon" src="./assets/img/keyboard_double_arrow_right_FILL0_wght400_GRAD0_opsz48.png" alt="Icon de doble derecha.">
+    </div>
+    <!--/Páginas-->
+    <!--Pie de Página-->
+    <footer class="footer">
       <div>
-        <p>Buscar por nombre:</p>
-        <input type="text">
+        <img class="logo" src="./assets/img/facebook.png" alt="Logo de facebook.">
+        <img class="logo" src="./assets/img/instagram.png" alt="Logo de instagram.">  
       </div>
-      <div>
-        <p>Ordenar por:</p>
-        <select name="" id="">
-          <option value="precio">Precio</option>
-          <option value="fecha">Fecha</option>
-        </select>
-      </div>
-      <div>
-        <p>Mostrar solo artículos:</p>
-        Nuevos <input type="checkbox">
-        Usados <input type="checkbox">
-      </div>
-    </section>
-    <main class="productos">
-      <div class="card">
-        <img src="./assets/img/foto-1.jpg" class="card-img-top" alt="Camisas italianas.">
-        <h3 class="card-title">Bicicleta</h3>
-        <p class="card-text">$15.000</p>
-        <button class="card-footer-button">Comprar</button>
-      </div>
-    </main>
-    <footer>
-      <div class="redes-sociales">
-        <img class="icon"  src="./assets/img/facebook.png" alt="Icono de Facebook">
-        <img class="icon"  src="./assets/img/instagram.png" alt="Icono de Instagram">
-      </div>
-      <p>
-        Todos los derechos reservados.
-      </p>
+      <p>Todos los derechos reservados</p>
     </footer>
+    <!--/Pie de Página-->
   </div>
 </body>
 </html>
