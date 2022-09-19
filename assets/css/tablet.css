@@ -7,7 +7,7 @@
     ".        products  products products products"
     "pages    pages     pages    pages    pages"
     "footer   footer    footer   footer   footer";
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(5, 1fr);
 }
 .displayNone,
 .nav{
@@ -17,6 +17,9 @@
   grid-area: nav;
   display: flex;
   justify-content: space-evenly;
+  background-color: #00b4d8ff;
+  color: #caf0f8ff;
+  height: 5rem;
 }
 .burger{
   display: none;
@@ -43,4 +46,5 @@ img{
 }
 .pages p{
   padding: 1%;
+  padding-bottom: 1rem;
 }

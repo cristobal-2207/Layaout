@@ -1,0 +1,21 @@
+/* CSS Desktop */
+.parent-container{
+  display: grid;
+  grid-template-areas: 
+    "header   filter    filter    filter    filter"
+    "nav      products  products  products  products"
+    ".      products  products  products  products"
+    "footer   products  products  products  products"
+    "footer   pages     pages     pages     pages";
+  grid-template-columns: repeat(5, 1fr);
+}
+nav{
+  flex-direction: column;
+  padding-top: 3rem;
+}
+nav p{
+  padding-bottom: 1rem;
+}
+img{
+  max-width: 18rem;
+}
